@@ -1,4 +1,7 @@
+mods :: Int -> [Int]
 mods n = map (mod n) [1..20]
+
+isZeros :: [Int] -> Bool
 isZeros numbers = all (== 0) numbers
 
 main = do
