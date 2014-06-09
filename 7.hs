@@ -2,9 +2,10 @@
 -- can see that the 6th prime is 13.
 --
 -- What is the 10 001st prime number?
-primes = 2 : filter isPrime [3,5..]
 
 -- http://stackoverflow.com/a/1140825/1207223
+primes = 2 : filter isPrime [3,5..]
+
 isPrime :: Int -> Bool
 isPrime n = isPrime' n primes
   where isPrime' n (x:xs)
